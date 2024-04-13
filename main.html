@@ -1,11 +1,40 @@
-<body>
-  <h1>Hello World</h1>
-  <p>This paragraph is a child of the body element</p>
-  <div>
-    
-  </div> 
-</body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Range Input</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <hr>
+      <form>
+        <h1>Create a burger!</h1>
+				<section class="protein">
+          <label for="patty">What type of protein would you like?</label>
+    			<input type="text" name="patty" id="patty" value="beef">
+        </section>
+        <hr>
 
-1.Add the paragraph below as a child of the div element.
+        <section class="patties">
+<label for="amount">How many patties would you like?</label>
+<!--Add your code below-->
+					
+          
+        </section>
+      </form>
+    </section>
+  </body>
 
-<p>This paragraph is a child of the div element and a grandchild of the body element</p>
+<p>1.In index.html we started a &lt;form&gt; for users to make a custom burger. Right now we have a &lt;label&gt; for patties that needs an associated &lt;input&gt; element.</p>
+<p>Since we want users to enter a number, create an &lt;input&gt; and set the attributes:</p>
+<p>Associate the &lt;input&gt; to the first &lt;label&gt; by assigning the correct value to id.</p>
+<ul>
+<li>type="number"</li>
+<li>step="1"</li>
+<li>name to "amount".</li>
+</ul>
+<p><strong>Note</strong>: You may notice that we started adding &lt;section&gt;s and other semantic HTML elements to help organize our &lt;form&gt; elements. If you want to learn more about these elements, please take our Semantic HTML lesson.</p>
+</html>

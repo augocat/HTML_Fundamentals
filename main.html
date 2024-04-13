@@ -1,11 +1,74 @@
-<body>
-  <h1>Hello World</h1>
-  <p>This paragraph is a child of the body element</p>
-  <div>
-    
-  </div> 
-</body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Checkbox Input</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <hr>
+      <form>
+        <h1>Create a burger!</h1>
+        <section class="protein">
+          <label for="patty">What type of protein would you like?</label>
+    			<input type="text" name="patty" id="patty">
+        </section>
+        <hr>
+        <section class="patties">
+          <label for="amount">How many patties would you like?</label>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <hr>
+        <section class="cooked">
+          <label for="doneness">How do you want your patty cooked</label>
+          <br>
+          <span>Rare</span>
+          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+          <span>Well-Done</span>
+        </section>
+        <hr>
+        
+        <section class="toppings">
+          <span>What toppings would you like?</span>
+          <br>
+          <!--Add your code below for the first checkbox-->
 
-1.Add the paragraph below as a child of the div element.
+					<label for="lettuce">Lettuce</label>
+          <!--Add your code below for the second checkbox-->
 
-<p>This paragraph is a child of the div element and a grandchild of the body element</p>
+          <label for="tomato">Tomato</label>
+          <!--Add your code below for the third checkbox-->
+
+
+        </section>
+        
+      </form>
+    </section>
+
+<p>1.Time to add some toppings! In the &lt;section&gt; with class="toppings", there are two &lt;label&gt;s but no associated &lt;input&gt; elements. Add an &lt;input&gt; element associated with the first &lt;label&gt;.</p>
+
+<p>The created &lt;input&gt; should have:</p>
+<ul>
+<li>an id set to "lettuce".</li>
+<li>a name attribute with a value of "topping".</li>
+<li>a type set to "checkbox"</li>
+<li>a value of "lettuce".</li>
+</ul>
+<p>2.Add another &lt;input&gt; element and associate it with the second &lt;label&gt;.</p>
+
+<p>The &lt;input&gt; element should have:</p>
+<ul>
+<li>an id set to "tomato".</li>
+<li>a type set to "checkbox".</li>
+<li>a name attribute with a value of "topping".</li>
+<li>a value of "tomato".</li>
+</ul>
+<p>3.Two choices are good, but it would be better to have even more.</p>
+
+<p>Add another &lt;input type="checkbox"&gt; and &lt;label&gt; pair. Assign the name of the &lt;input&gt; to "topping". You’re free to decide the value and id but make sure that your new &lt;label&gt; and &lt;input&gt; are associated.</p>
+
+  </body>
+</html>

@@ -1,11 +1,42 @@
-<body>
-  <h1>Hello World</h1>
-  <p>This paragraph is a child of the body element</p>
-  <div>
-    
-  </div> 
-</body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  </head>
+  <body>
+    <section class="overlay">
+      <h1>Sign Up</h1>
+      <p>Create an account:</p>
+      <form action="submission.html" method="GET">
+        <!--Add the minlength and maxlength attributes to the input fields-->
+        <label for="username">Username:</label>
+        <br>
+       <input id="username" name="username" type="text" required/>
+        <br>
+        <label for="pw">Password:</label>
+        <br>
+        <input id="pw" name="pw" type="password" required/>
+        <br>
+        <input type="submit" value="Submit"/>
+      </form>
+    </section>
 
-1.Add the paragraph below as a child of the div element.
+<p>1.For the login &lt;form&gt;, we want our users to have usernames that are at least 3 characters and at most 15. Let’s add this validation to our current &lt;form&gt;.</p>
 
-<p>This paragraph is a child of the div element and a grandchild of the body element</p>
+<p>To the &lt;input&gt; with an id of "username", add the following attributes and values:</p>
+<ul>
+<li>a minlength of "3"</li>
+<li>a maxlength of "15"</li>
+</ul>
+<p>2.We also want passwords to have at least 8 characters and at most 15.</p>
+
+<p>So, in the opening &lt;input&gt; tag that has an id of "pw", add:</p>
+<ul>
+<li>a minlength of "8"</li>
+<li>a maxlength of "15"</li>
+</ul>
+  </body>
+</html>

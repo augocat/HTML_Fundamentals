@@ -1,11 +1,51 @@
-<body>
-  <h1>Hello World</h1>
-  <p>This paragraph is a child of the body element</p>
-  <div>
-    
-  </div> 
-</body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Range Input</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <hr>
+      <form>
+        <h1>Create a burger!</h1>
+				<section class="protein">
+          <label for="patty">What type of protein would you like?</label>
+    			<input type="text" name="patty" id="patty">
+        </section>
+        <hr>
+        <section class="patties">
+          <label for="amount">How many patties would you like?</label>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <hr>
+				
+        <section class="cooked">
+          <label for="doneness">How do you want your patty cooked</label>
+          <br>
+          <span>Rare</span>
+		       <!--Add your code below-->
 
-1.Add the paragraph below as a child of the div element.
+          
+          <span>Well-Done</span>
+        </section>
+        
+      </form>
+    </section>
 
-<p>This paragraph is a child of the div element and a grandchild of the body element</p>
+<p>1.Let’s give our users an option for how they want to cook their patties. We can do this by adding a slider to the existing &lt;form&gt;.</p>
+
+<p>In the &lt;section&gt; with class="cooked", add an &lt;input&gt; element. Set the id and name to "doneness". Also, set the type attribute to "range".</p>
+
+<p>Since our &lt;form&gt; is getting long, you might have to scroll down to find the provided &lt;section&gt;.</p>
+<p>2.For the newly created &lt;input&gt; set the:</p>
+<ul>
+<li>min attribute to "0".</li>
+<li>max attribute to "5".</li>
+<li>step attribute to "0.5".</li>
+</ul>
+  </body>
+</html>
